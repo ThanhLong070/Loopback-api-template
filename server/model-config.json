@@ -1,0 +1,86 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models",
+      "../node_modules/loopback-component-passport/lib/models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins",
+      "../node_modules/loopback-ds-timestamp-mixin",
+      "../node_modules/loopback-nested-filter-mixin"
+    ]
+  },
+  "User": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "Application": {
+    "dataSource": "mysql",
+    "public": false
+  },
+  "Installation": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "Notification": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "AccessToken": {
+    "dataSource": "mysql",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "mysql",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "mysql",
+    "public": true,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "Email": {
+    "dataSource": "mail",
+    "public": false
+  },
+  "Account": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "AccountToken": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "Faq": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "Container": {
+    "dataSource": "storage",
+    "public": true
+  },
+  "ActiveLog": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "Example": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "Transaction": {
+    "dataSource": null,
+    "public": true
+  }
+}

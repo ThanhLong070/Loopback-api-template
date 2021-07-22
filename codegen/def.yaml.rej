@@ -1,0 +1,48 @@
+***************
+*** 9882,9894 ****
+        name:
+          type: string
+          enum:
+-         - SUPERADMIN
+-         - ADMIN
+-         - MANAGER
+-         - EMPLOYEE
+-         - RH
+-         - CHSCT
+-         - DIRECTOR
+        description:
+          type: string
+        created:
+--- 9882,9894 ----
+        name:
+          type: string
+          enum:
++           - SUPERADMIN
++           - ADMIN
++           - MANAGER
++           - EMPLOYEE
++           - RH
++           - CHSCT
++           - DIRECTOR
+        description:
+          type: string
+        created:
+***************
+*** 10107,10114 ****
+        context:
+          type: string
+          enum:
+-         - ANNUAL
+-         - PID
+        description:
+          type: string
+        confidentiel:
+--- 10109,10116 ----
+        context:
+          type: string
+          enum:
++           - ANNUAL
++           - PID
+        description:
+          type: string
+        confidentiel:

@@ -1,0 +1,66 @@
+{
+  "name": "Example",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "property1": {
+      "type": "string",
+      "required": true
+    },
+    "property2": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {
+    "prototype.buyIap": {
+      "accepts": [
+        {
+          "arg": "ctx",
+          "type": "any",
+          "required": true,
+          "description": "context",
+          "http": {
+            "source": "context"
+          }
+        },
+        {
+          "arg": "data",
+          "type": "Transaction",
+          "required": false,
+          "description": "Data must be a JSON-encoded string of Transaction model",
+          "http": {
+            "source": "body"
+          }
+        }
+      ],
+      "returns": [
+        {
+          "arg": "isCompleted",
+          "type": "boolean",
+          "root": false,
+          "description": "Show that the transaction is created"
+        },
+        {
+          "arg": "message",
+          "type": "string",
+          "root": false,
+          "description": "The return message"
+        }
+      ],
+      "description": "Buy by in-app purchase",
+      "http": [
+        {
+          "path": "/buyIap",
+          "verb": "post"
+        }
+      ]
+    }
+  }
+}

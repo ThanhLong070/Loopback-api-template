@@ -1,0 +1,23 @@
+{
+  "name": "Transaction",
+  "base": "Model",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "appleReceipt": {
+      "type": "string"
+    },
+    "googleReceipt": {
+      "type": {
+        "data": "object",
+        "signature": "string"
+      }
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

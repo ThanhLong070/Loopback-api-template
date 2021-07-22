@@ -1,0 +1,11 @@
+--- codegen/def.yaml	2019-05-07 17:45:35.000000000 +0700
++++ codegen/def1.yaml	2019-05-07 17:46:40.000000000 +0700
+@@ -4462,6 +4462,8 @@
+     properties:
+       nom:
+         type: string
++      password:
++        type: string
+       prenom:
+         type: string
+       sex:

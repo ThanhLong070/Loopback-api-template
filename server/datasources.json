@@ -1,0 +1,43 @@
+{
+  "storage": {
+    "name": "storage",
+    "connector": "loopback-component-storage",
+    "provider": "filesystem",
+    "root": "./uploads",
+    "nameConflict": "makeUnique"
+  },
+  "mysql": {
+    "url": "mysql://mobility-managem:v8PfHZDn@ql6625.fr/mobilisation",
+    "name": "mysql",
+    "connector": "mysql"
+  },
+  "mail": {
+    "name": "mail",
+    "connector": "mail",
+    "transports": [
+      {
+        "type": "smtp",
+        "host": "ql6625.fr",
+        "tls": {
+          "rejectUnauthorized": false
+        },
+        "port": 587,
+        "secure": false,
+        "auth": {
+          "user": "contact@ql6625.fr",
+          "pass": "VNfpQ3wb"
+        },
+        "requireTLS": true,
+        "logger": false,
+        "debug": false
+      }
+    ]
+  },
+  "push": {
+    "name": "push",
+    "connector": "loopback-component-push",
+    "installation": "Installation",
+    "notification": "Notification",
+    "application": "Application"
+  }
+}
